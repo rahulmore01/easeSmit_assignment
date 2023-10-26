@@ -14,7 +14,7 @@ const Navbar = () => {
         height="180"
       />
 
-      <ul className="flex gap-12 text-black text-[18px] opacity-80">
+      <ul className="flex gap-8 text-black text-[16px] opacity-80">
         <li className="cursor-pointer relative group hover:text-yellow-500">
           <Link href="/">Home</Link>
           <span className="absolute mt-8 w-0 h-[2px] bg-yellow-500 left-1/2 transform -translate-x-1/2 transition-all group-hover:w-full"></span>
@@ -44,13 +44,13 @@ const Navbar = () => {
           <span className="absolute mt-8 w-0 h-[2px] bg-yellow-500 left-1/2 transform -translate-x-1/2 transition-all group-hover:w-full"></span>
         </li>
       </ul>
-      <div className="flex gap-4 opacity-90">
+      <div className="flex text-[14px] gap-4 opacity-90">
         <div className="flex flex-col justify-center items-center">
-          <AiOutlineUser className="h-7 w-7" />
+          <AiOutlineUser className="h-6 w-6" />
           <p>My Profile</p>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <AiOutlineShoppingCart className="h-7 w-7" />
+          <AiOutlineShoppingCart className="h-6 w-6" />
           <p>Cart</p>
         </div>
       </div>

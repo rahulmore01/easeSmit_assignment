@@ -7,9 +7,9 @@ const Searchbar = () => {
     <div className="flex flex-col w-full justify-center items-center px-20 mt-6">
       <div className=" flex justify-between w-[270px] items-center h-8 p-2 rounded-md">
         <div className=" flex justify-center items-center h-8 p-2 rounded-md">
-          <CiSearch className="text-gray-600 mr-2 w-6 h-6 opacity-80" />
+          <CiSearch className="text-gray-600 mr-2 w-8 h-8 opacity-80" />
           <input
-            className="text-gray-600 opacity-50 "
+            className="text-gray-600 opacity-50 w-[170px] "
             placeholder="Search Plant"
           />
           {/* <span className="text-gray-600 opacity-50 ">Search Plant</span> */}

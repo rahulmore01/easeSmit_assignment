@@ -13,14 +13,14 @@ const ImageCard = ({ src }) => {
   return (
     <div className="w-[200px] text-center flex flex-col justify-center items-center gap-5 mb-20">
       <Image
-        className="rounded-full w-[160px] h-[160px] bg-cover"
+        className="rounded-full w-[120px] h-[120px] bg-cover"
         src={src}
         alt="nursery"
-        width={130}
-        height={130}
+        width={80}
+        height={80}
       />
       <p className="text-center opacity-50">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, unde!
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
       </p>
     </div>
   );

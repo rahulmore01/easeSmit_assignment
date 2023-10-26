@@ -20,14 +20,14 @@ const MainScreen = () => {
     <div className=" mt-10 px-20">
       <div>
         <div className="flex gap-3 items-center justify-start ">
-          <button className="text-white px-8 py-2 bg-[#29521E] shadow-xl text-[20px] capitalize">
+          <button className="text-white px-8 py-[5px] bg-[#29521E] shadow-xl text-[20px] capitalize">
             plants
           </button>
-          <button className="text-black px-8 py-2 opacity-30 border-2 border-slate-800 text-[20px]">
+          <button className="text-black px-8 py-[5px] opacity-30 border-2 border-slate-800 text-[20px]">
             Pots
           </button>
         </div>
-        <div className="pt-8 text-[20px] opacity-60">
+        <div className="pt-8 text-[18px] font-light opacity-60">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta
           esse enim eaque id, minus delectus officia blanditiis excepturi
           laudantium illo quis in ipsum nam. Distinctio voluptates illo alias
@@ -39,7 +39,7 @@ const MainScreen = () => {
       </div>
       <div>
         <h3 className="text-[28px] font-semibold mt-10 mb-10">Nursery</h3>
-        <div className="flex gap-4 overflow-x-auto">
+        <div className="flex gap-6 overflow-x-auto">
           {imagePaths.map((img, index) => (
             <ImageSlider key={index} img={img} />
           ))}
