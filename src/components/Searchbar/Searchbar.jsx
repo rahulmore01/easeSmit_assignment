@@ -12,7 +12,6 @@ const Searchbar = () => {
             className="text-gray-600 opacity-50 w-[170px] "
             placeholder="Search Plant"
           />
-          {/* <span className="text-gray-600 opacity-50 ">Search Plant</span> */}
         </div>
 
         <PiPlant className="text-[#29521E] ml-2 h-5 w-5" />

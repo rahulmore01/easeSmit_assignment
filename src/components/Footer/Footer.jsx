@@ -9,8 +9,8 @@ import { FaSquareThreads } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-[#F4FFE8] w-screen h-auto mt-20 px-16">
-      <div className="flex justify-start items-start gap-16 pt-14">
+    <div className="bg-[#F4FFE8] w-screen h-auto mt-20 lg:px-16 px-10">
+      <div className="lg:flex justify-start items-start gap-16 pt-14  ">
         <div className="flex flex-col gap-3">
           <h1 className="uppercase text-xl w-[230px]">
             subscribe to our newsletter
@@ -24,13 +24,14 @@ const Footer = () => {
             type="text"
             placeholder="enter your email address"
           />
-          <button className="w-[140px] items-center uppercase px-6 p-2 rounded-full text-white bg-green-800 font-semibold">
+          <button className="w-[140px] items-center uppercase px-6 p-2 rounded-full text-white bg-green-800 font-semibold mb-8">
             subscribe
           </button>
         </div>
-        <div className="flex items-start">
-          <div className="flex flex-col gap-3">
-            <h1 className="uppercase text-xl w-[230px] mb-4 ">about us</h1>
+        <div className="lg:flex items-start ">
+          {/* <div className="flex items-start vvs:flex-col"> */}
+          <div className="flex flex-col gap-3 vvs:mb-10">
+            <h1 className="uppercase text-xl w-[230px] mb-4  ">about us</h1>
             <a className="text-[15px] font-medium opacity-50 capitalize cursor-pointer">
               Our Story
             </a>
@@ -47,7 +48,7 @@ const Footer = () => {
               help & support
             </a>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 vvs:mb-10">
             <h1 className="uppercase text-xl w-[230px] mb-4 ">our services</h1>
             <a className="text-[15px] font-medium opacity-50 capitalize cursor-pointer">
               book maali
@@ -65,7 +66,7 @@ const Footer = () => {
               gardening tools
             </a>
           </div>
-          <div className="flex flex-col gap-3 w-[230px]">
+          <div className="flex flex-col gap-3 w-[230px] vvs:mb-10">
             <h1 className="uppercase text-xl w-[230px] mb-4 ">useful links</h1>
             <a className="text-[15px] font-medium opacity-50 capitalize cursor-pointer">
               my account
@@ -83,7 +84,7 @@ const Footer = () => {
               return, refund & replacement policy
             </a>
           </div>
-          <div className="flex flex-col gap-3 w-[230px]">
+          <div className="flex flex-col gap-3 w-[230px] vvs:mb-10">
             <h1 className="uppercase text-xl w-[260px] mb-4 ">get in touch</h1>
             <a className="text-[15px] font-medium opacity-50 capitalize cursor-pointer">
               address f-343, first floor, sushant lok phase-3,
@@ -120,7 +121,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="h-[100px]">
-        {/* <span className="w-screen h-[2px] text-slate-600"></span> */}
         <hr className="border-black opacity-40 mt-4" />
         <p className="pt-4 text-[16px] opacity-40">
           2023, chapterone.com all rights reserved.

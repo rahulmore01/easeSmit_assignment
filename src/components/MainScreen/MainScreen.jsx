@@ -17,9 +17,9 @@ const MainScreen = () => {
   ];
 
   return (
-    <div className=" mt-10 px-20">
+    <div className=" mt-10 px-20 vvs:px-10">
       <div>
-        <div className="flex gap-3 items-center justify-start ">
+        <div className="flex gap-3 items-center lg:justify-start vvs:justify-center ">
           <button className="text-white px-8 py-[5px] bg-[#29521E] shadow-xl text-[20px] capitalize">
             plants
           </button>
@@ -27,7 +27,7 @@ const MainScreen = () => {
             Pots
           </button>
         </div>
-        <div className="pt-8 text-[18px] font-light opacity-60">
+        <div className="lg:text-start   pt-8 text-[18px] font-light opacity-60 vvs:text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta
           esse enim eaque id, minus delectus officia blanditiis excepturi
           laudantium illo quis in ipsum nam. Distinctio voluptates illo alias
@@ -38,18 +38,17 @@ const MainScreen = () => {
         </div>
       </div>
       <div>
-        <h3 className="text-[28px] font-semibold mt-10 mb-10">Nursery</h3>
-        <div className="flex gap-6 overflow-x-auto">
+        <h3 className="text-[28px] font-semibold mt-10 mb-10 ">Nursery</h3>
+        <div className="flex gap-6 overflow-x-auto vvs:gap-2 ">
           {imagePaths.map((img, index) => (
             <ImageSlider key={index} img={img} />
           ))}
         </div>
       </div>
-      <div className="flex justify-center items-start gap-12">
+      <div className="lg:flex justify-center items-start gap-12  ">
         <Filter />
         <Products />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

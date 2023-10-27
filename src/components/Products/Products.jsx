@@ -45,7 +45,7 @@ const Product = ({
             ₹{discountedPrice}
           </p>
         </div>
-        <div className="flex justify-between items-center gap-2 mt-1 text-[13px] font-semibold">
+        <div className="flex justify-between items-center gap-2 mt-1 text-[13px] font-semibold mb-10">
           <button className="flex items-center bg-[#29521E] text-white p-2 rounded-lg ">
             <AiOutlineMinus className="mr-2 font-medium" />
             Add to Cart
@@ -73,9 +73,9 @@ const Products = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center ">
-      <div className="flex flex-col gap-8">
-        <div className="flex justify-start items-center gap-4 ">
+    <div className="flex flex-col justify-center items-center vvs:justify-center ">
+      <div className="flex flex-col gap-8 lg:justify-start">
+        <div className="flex justify-start items-center gap-4 mt-4  ">
           <p className="opacity-70">300 Products</p>
 
           <select
@@ -90,18 +90,18 @@ const Products = () => {
         </div>
 
         {products.map((product, index) => (
-          <div className="flex flex-col gap-16">
-            <div className="flex  gap-12">
+          <div className="flex flex-col sm:flex-wrap gap-16">
+            <div className=" lg:flex gap-12">
               <Product key={index} {...product} />
               <Product key={index} {...product} />
               <Product key={index} {...product} />
             </div>
-            <div className="flex  gap-12">
+            <div className="lg:flex gap-12">
               <Product key={index} {...product} />
               <Product key={index} {...product} />
               <Product key={index} {...product} />
             </div>
-            <div className="flex  gap-12">
+            <div className="lg:flex gap-12">
               <Product key={index} {...product} />
               <Product key={index} {...product} />
               <Product key={index} {...product} />
@@ -109,7 +109,7 @@ const Products = () => {
           </div>
         ))}
       </div>
-      <button className="flex items-center justify-center w-[160px] bg-[#29521E] text-white p-3 rounded-full shadow-xl mt-14 text-[18px]">
+      <button className="flex items-center justify-center w-[160px] bg-[#29521E] text-white p-3 rounded-full shadow-xl mt-6 text-[18px]">
         View More
       </button>
     </div>
